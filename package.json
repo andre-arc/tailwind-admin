@@ -4,21 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "development": "mix",
-      "watch": "mix watch",
-      "watch-poll": "mix watch -- --watch-options-poll=1000",
-      "hot": "mix watch --hot",
-      "production": "mix --production"
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "production": "mix --production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "laravel-mix": "^6.0.9"
+    "browser-sync": "^2.26.13",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "laravel-mix": "^6.0.9",
+    "laravel-mix-tailwind": "^0.1.1"
   },
   "dependencies": {
     "autoprefixer": "^10.2.1",
     "postcss": "^8.2.3",
     "tailwindcss": "^2.0.2"
-  }
+  },
+  "browserslist": "last 7 versions"
 }
